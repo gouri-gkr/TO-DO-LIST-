@@ -1,0 +1,46 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Sample Task 1",
+      "completed": false,
+      "folder": "Work"
+    },
+    {
+      "id": 2,
+      "title": "Sample Task 2",
+      "completed": true,
+      "folder": "Personal"
+    },
+    {
+      "id": 3,
+      "title": "Sample Task 3",
+      "completed": false,
+      "folder": "Shopping"
+    },
+    {
+      "id": 4,
+      "title": "Sample Task 4",
+      "completed": true,
+      "folder": "Fitness"
+    }
+  ],
+  "folders": [
+    {
+      "name": "Work",
+      "tasks": [1]
+    },
+    {
+      "name": "Personal",
+      "tasks": [2]
+    },
+    {
+      "name": "Shopping",
+      "tasks": [3]
+    },
+    {
+      "name": "Fitness",
+      "tasks": [4]
+    }
+  ]
+}

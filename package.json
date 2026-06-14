@@ -1,0 +1,23 @@
+{
+  "name": "daily-tasks-website",
+  "version": "1.0.0",
+  "description": "A simple daily task list application with folder organization.",
+  "main": "src/scripts/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step can be added here'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "tasks",
+    "to-do",
+    "folder",
+    "organization"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

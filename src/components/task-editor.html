@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Editor</title>
+</head>
+<body>
+    <div class="task-editor">
+        <h2>Add/Edit Task</h2>
+        <form id="task-form">
+            <label for="task-title">Task Title:</label>
+            <input type="text" id="task-title" name="task-title" required>
+            
+            <label for="task-description">Description:</label>
+            <textarea id="task-description" name="task-description"></textarea>
+            
+            <label for="task-due-date">Due Date:</label>
+            <input type="date" id="task-due-date" name="task-due-date">
+            
+            <button type="submit">Save Task</button>
+        </form>
+    </div>
+</body>
+</html>

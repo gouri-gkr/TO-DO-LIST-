@@ -1,0 +1,28 @@
+<div class="folder-corner">
+    <button id="create-folder-btn">Create Folder</button>
+    <div id="folder-list">
+        <!-- Folders will be dynamically added here -->
+    </div>
+</div>
+
+<style>
+    .folder-corner {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #create-folder-btn {
+        margin-bottom: 10px;
+    }
+
+    #folder-list {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+</style>
