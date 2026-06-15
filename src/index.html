@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Task List</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/components.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daily Task List</title>
+
+  <!-- Lobster font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="folder-corner">
-        <!-- Folder management interface will be injected here -->
-    </div>
-    <div class="task-editor">
-        <!-- Task editor will be injected here -->
-    </div>
-    <div class="task-list">
-        <!-- Task items will be dynamically generated and displayed here -->
-    </div>
-    <script src="scripts/storage.js"></script>
-    <script src="scripts/ui.js"></script>
-    <script src="scripts/app.js"></script>
+  <header class="header container">
+    <p class="greeting">Welcome — have a lovely day!</p>
+    <h1 class="site-title">Daily Task List</h1>
+  </header>
+
+  <main class="container app-card">
+    <section class="task-editor">
+      <input id="task-input" type="text" placeholder="Add a new task..." />
+      <button id="add-task-btn" class="icon-btn" aria-label="Add task">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </section>
+
+    <ul id="task-list" class="task-list" aria-live="polite"></ul>
+  </main>
+
+  <!-- minimal color wheel control in corner (visible & clickable) -->
+  <input id="bg-color-picker" class="color-input" type="color" aria-label="Choose background color" title="Change background color" />
+
+  <script src="scripts/app.js"></script>
 </body>
 </html>
